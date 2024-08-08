@@ -1,19 +1,22 @@
-# Lista de comandos usados no projeto
+## Lista de comandos usados no projeto
 
-npm init -y
-npm i tyscript
-npx tsc --init
+- npm init -y
+- npm i tyscript
+- npx tsc --init
+-
+- npm run dev
+- npm i ts-node
+-
+- npm run build
 
-npm run dev
-npm i ts-node
+## Scripts tsconfig.json
+- "rootDir": "./src",
+- "outDir": "./build",
 
-npm run build
+## Scripts package.json
+- "build": "npx tsc",
+- "dev": "npx ts-node ./src/server.ts",
 
-# Scripts tsconfig.json
-"rootDir": "./src",
-"outDir": "./build",
+## Gerenciador de versão
 
-# Scripts package.json
-
-"build": "npx tsc",
-"dev": "npx ts-node ./src/server.ts",
+- nvm
